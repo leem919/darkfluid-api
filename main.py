@@ -150,3 +150,8 @@ def get_items_discounts():
 @app.route('/', methods=['GET'])
 def generic_message():
     return jsonify({"message": "darkfluid-api running on this host"})
+
+# start server
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=80)
