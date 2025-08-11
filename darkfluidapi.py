@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # load data
 
-data_dir = os.path.join(os.path.dirname(__file__), "data")
+data_dir = os.path.join(os.path.dirname(__file__), "darkfluidapi_data")
 
 def load_json(filename):
     path = os.path.join(data_dir, filename)
